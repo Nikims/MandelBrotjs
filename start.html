@@ -132,6 +132,7 @@
 		};
 
 		function init() {
+
 			if (endlessCanvas) {
 				canvas.width = window.innerWidth;
 				canvas.height = window.innerHeight;
@@ -205,6 +206,8 @@
 					context.fillText("Press <F12> for error info!", 40, 40);
 				};
 			}
+			context.fillStyle = "black";
+		context.fillRect(0, 0, 800, 800);
 			redraw();
 			setInterval(update, updateTime);
 		}
